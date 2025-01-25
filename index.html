@@ -3,64 +3,76 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Your Personal Site</title>
+        <title>Your Name</title>
         <style>
             body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+            header {
+                background-color: #f4f4f4;
+                padding: 20px;
+                text-align: center;
+            }
+            nav {
                 background-color: #333;
                 color: #fff;
-                font-family:
-                    monospace,
-                    Courier New,
-                    monospace,
-                    Consolas,
-                    "Courier New",
-                    monospace;
-                margin: 0;
+                padding: 10px;
+                text-align: center;
+            }
+            nav a {
+                color: #fff;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            main {
                 padding: 20px;
             }
-
-            .header {
-                display: flex;
-                justify-content: space-around;
-                background-color: #4caf50;
-                color: white;
-                padding: 10px;
+            section {
+                margin-bottom: 20px;
             }
-
-            .nav a {
-                text-decoration: none;
-                color: white;
-                margin-left: 20px;
+            footer {
+                background-color: #f4f4f4;
+                text-align: center;
+                padding: 10px;
             }
         </style>
     </head>
     <body>
-        <div class="header">
-            <a href="https://github.com/hskadoosh">GitHub</a>
-            <a href="#">X</a>
-            <a href="#">Other</a>
-            <span><strong>hskadoosh</strong></span>
-        </div>
-
+        <header>
+            <h1>Daksh</h1>
+        </header>
         <nav>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#writings">Writings</a>
-            <a href="#now">Now</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
         </nav>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>This is the projects section.</p>
-        </section>
-
-        <section id="writings">
-            <h2>Writings</h2>
-            <p>This is the writings section.</p>
-        </section>
-
-        <section id="now">
-            <h2>Now</h2>
-            <p>This is the now section.</p>
-        </section>
+        <main>
+            <section id="about">
+                <h2>About</h2>
+                <p>Write a brief introduction about yourself here.</p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Showcase your projects here.</p>
+            </section>
+            <section id="blog">
+                <h2>Blog</h2>
+                <p>Share your thoughts and articles here.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Provide your contact information here.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </footer>
     </body>
 </html>
